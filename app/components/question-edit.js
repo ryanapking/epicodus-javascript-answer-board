@@ -14,6 +14,9 @@ export default Ember.Component.extend({
     },
     showEdit() {
       this.set('editShowing', true);
+    },
+    deleteQuestion(question) {
+      this.sendAction('deleteQuestion', question);
     }
   }
 });

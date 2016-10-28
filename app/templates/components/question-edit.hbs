@@ -18,6 +18,7 @@
           {{input value=newAuthor placeholder=question.author}}
         </div>
         <button {{action 'editQuestion' question}} class='ui button'>Save Changes</button>
+        <button {{action 'deleteQuestion' question}} class='ui button'>Delete Question</button>
       </form>
     {{else}}
       <button {{action 'showEdit'}} class='ui button'>Edit Question</button>

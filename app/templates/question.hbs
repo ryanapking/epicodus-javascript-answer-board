@@ -1,7 +1,7 @@
 <div class='ui questionDetails'>
   <div class='ui segment questionSegment'>
     {{question-details question=model}}
-    {{question-edit question=model editQuestion='editQuestion'}}
+    {{question-edit question=model editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
   </div>
   <br>
 </div>
@@ -9,6 +9,6 @@
   {{answer-new question=model newAnswer='newAnswer'}}
   <br>
   {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
+    {{answer-tile answer=answer deleteAnswer='deleteAnswer'}}
   {{/each}}
 </div>

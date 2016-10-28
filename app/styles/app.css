@@ -43,7 +43,6 @@
 }
 
 .giantQuestionIcon {
-  height: 100%;
   float: left;
 }
 
@@ -58,4 +57,8 @@
 
 .answerAuthor {
   color: lightgray;
+}
+
+.deleteIcon:hover {
+  cursor: pointer;
 }

@@ -1,6 +1,11 @@
 <div class='ui segment answerSegment'>
   <div class='ui grid'>
-    <div class='twelve wide column'>
+    <div class='one wide column'>
+      <div {{action 'deleteAnswer' answer}}>
+        <i class='trash outline icon red big deleteIcon'></i>
+      </div>
+    </div>
+    <div class='eleven wide column'>
         <p class='answerAnswer'>{{answer.answer}}</p>
         <p class='answerAuthor'>{{answer.author}}</p>
     </div>
