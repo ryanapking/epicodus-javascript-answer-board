@@ -1,4 +1,6 @@
-<h4>{{question.question}}</h4>
-<p>{{question.notes}}</p>
-<p>Question from: {{question.author}}</p>
-<hr>
+{{#link-to 'question' question}}
+  <h4>{{question.question}}</h4>
+  <p>{{question.notes}}</p>
+  <p>Question from: {{question.author}}</p>
+  <hr>
+{{/link-to}}
