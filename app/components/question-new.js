@@ -9,11 +9,17 @@ export default Ember.Component.extend({
         notes: this.get('notes'),
         author: this.get('author')
       };
-      this.set('formShowing', false);
+      this.send('resetQuestionForm');
       this.sendAction('newQuestion', params);
     },
     showForm() {
       this.set('formShowing', true);
+    },
+    resetQuestionForm() {
+      this.set('question', '');
+      this.set('notes', '');
+      this.set('author', '');
+      this.set('formShowing', false);
     }
   }
 });

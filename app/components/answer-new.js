@@ -9,11 +9,16 @@ export default Ember.Component.extend({
         answer: this.get('answer'),
         question: question
       };
-      this.set('answerFormShowing', false);
+      this.send('resetAnswerForm');
       this.sendAction('newAnswer', params);
     },
     showAnswerForm() {
       this.set('answerFormShowing', true);
+    },
+    resetAnswerForm() {
+      this.set('author', '');
+      this.set('answer', '');
+      this.set('answerFormShowing', false);
     }
   }
 });

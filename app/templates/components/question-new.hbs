@@ -2,17 +2,18 @@
   <form class='ui form'>
     <div class='field'>
       <label>Question</label>
-      {{input value=question}}
+      {{textarea value=question rows='3'}}
     </div>
     <div class='field'>
       <label>Notes</label>
-      {{input value=notes}}
+      {{textarea value=notes rows='3'}}
     </div>
     <div class='field'>
       <label>Your Name</label>
       {{input value=author}}
     </div>
     <button {{action 'newQuestion'}} class='ui button'>Submit Question</button>
+    <button {{action 'resetQuestionForm'}} class='ui button'>Cancel</button>
   </form>
 {{else}}
   <button {{action 'showForm'}} class='ui button'>Ask Your Own Question</button>

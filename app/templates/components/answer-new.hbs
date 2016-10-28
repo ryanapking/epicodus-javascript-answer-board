@@ -8,9 +8,10 @@
         </div>
         <div class='eight wide field'>
           <label>Answer</label>
-          {{textarea value=answer}}
+          {{textarea value=answer rows='3'}}
         </div>
       </div>
+      <button {{action 'resetAnswerForm'}} class='ui button'>Cancel</button>
       <button {{action 'newAnswer' question}} class='ui button'>Submit Answer</button>
     </div>
   </div>
