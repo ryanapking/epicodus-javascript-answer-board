@@ -1,3 +1,6 @@
 {{question-details question=model}}
 {{question-edit question=model editQuestion='editQuestion'}}
 {{answer-new question=model newAnswer='newAnswer'}}
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}

@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  answerFormShowing: false,
   actions: {
     newAnswer(question) {
       var params = {
@@ -8,7 +9,11 @@ export default Ember.Component.extend({
         answer: this.get('answer'),
         question: question
       };
+      this.set('answerFormShowing', false);
       this.sendAction('newAnswer', params);
+    },
+    showAnswerForm() {
+      this.set('answerFormShowing', true);
     }
   }
 });

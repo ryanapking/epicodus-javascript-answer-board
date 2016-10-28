@@ -1,5 +1,9 @@
-<label>Answer</label>
-{{input value=answer}}
-<label>Author</label>
-{{input value=author}}
-<button {{action 'newAnswer' question}}>Submit Question</button>
+{{#if answerFormShowing}}
+  <label>Answer</label>
+  {{input value=answer}}
+  <label>Author</label>
+  {{input value=author}}
+  <button {{action 'newAnswer' question}}>Submit Answer</button>
+{{else}}
+  <button {{action 'showAnswerForm'}}>Answer Question</button>
+{{/if}}
