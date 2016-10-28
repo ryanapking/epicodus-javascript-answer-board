@@ -1,11 +1,19 @@
 {{#if formShowing}}
-  <label>Question</label>
-  {{input value=question}}
-  <label>Notes</label>
-  {{input value=notes}}
-  <label>Author</label>
-  {{input value=author}}
-  <button {{action 'newQuestion'}}>Submit Question</button>
+  <form class='ui form'>
+    <div class='field'>
+      <label>Question</label>
+      {{input value=question}}
+    </div>
+    <div class='field'>
+      <label>Notes</label>
+      {{input value=notes}}
+    </div>
+    <div class='field'>
+      <label>Your Name</label>
+      {{input value=author}}
+    </div>
+    <button {{action 'newQuestion'}} class='ui button'>Submit Question</button>
+  </form>
 {{else}}
   <button {{action 'showForm'}}>Add New Question</button>
 {{/if}}

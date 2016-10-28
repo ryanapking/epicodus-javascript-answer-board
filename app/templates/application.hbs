@@ -1,7 +1,9 @@
-<h1 class='ui header'>
-  <i class='comments outline icon'></i>
-  <div class='content'>
+{{#link-to 'index'}}
+  <h1 class='ui center aligned huge icon header grey'>
     Answer Board
-  </div>
-</h1>
-{{outlet}}
+    <i class='comments outline icon'></i>
+  </h1>
+{{/link-to}}
+<div class='ui container'>
+  {{outlet}}
+</div>
