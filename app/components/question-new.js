@@ -6,9 +6,9 @@ export default Ember.Component.extend({
   actions: {
     newQuestion() {
       if (
-        this.get('question')
-        && this.get('notes')
-        && this.get('author')
+        this.get('question') &&
+        this.get('notes') &&
+        this.get('author')
       ) {
         var params = {
           question: this.get('question'),
