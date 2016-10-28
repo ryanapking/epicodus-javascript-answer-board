@@ -17,14 +17,28 @@
         <label>Author</label>
           {{input value=newAuthor placeholder=question.author}}
         </div>
-        <button {{action 'editQuestion' question}} class='ui labeled icon button blue'>
-          <i class='comment outline icon'></i>
-          Save Changes
-        </button>
-        <button {{action 'deleteQuestion' question}} class='ui labeled icon button red'>
-          <i class='trash icon'></i>
-          Delete Question
-        </button>
+
+        {{#if deleteRequested}}
+          <div class="ui red message">
+            <div class="header">
+              Are you sure you want to delete this question?
+            </div>
+            <ul class="list">
+              <button {{action 'deleteQuestion' question}} class='ui button red'>Delete</button>
+              <button {{action 'cancelDelete'}} class='ui button blue'>Cancel</button>
+            </ul>
+          </div>
+        {{else}}
+          <button {{action 'editQuestion' question}} class='ui labeled icon button blue'>
+            <i class='comment outline icon'></i>
+            Save Changes
+          </button>
+          <button {{action 'requestDelete'}} class='ui labeled icon button red'>
+            <i class='trash icon'></i>
+            Delete Question
+          </button>
+        {{/if}}
+
       </form>
     {{else}}
       <button {{action 'showEdit'}} class='ui labeled icon button blue'>

@@ -1,10 +1,26 @@
 <div class='ui segment answerSegment'>
   <div class='ui grid'>
-    <div class='one wide column'>
-      <div {{action 'deleteAnswer' answer}}>
-        <i class='trash outline icon red big deleteIcon'></i>
+
+    {{#if deleteRequested}}
+      <div class='sixteen wide column'>
+        <div class="ui red message leftAlign">
+          <div class="header">
+            Confirm Delete
+          </div>
+          <ul class="list">
+            <button {{action 'deleteAnswer' answer}} class='ui button red'>Delete</button>
+            <button {{action 'cancelDelete'}} class='ui button blue'>Cancel</button>
+          </ul>
+        </div>
       </div>
-    </div>
+    {{else}}
+      <div class='one wide column'>
+        <div {{action 'requestDelete'}}>
+          <i class='trash outline icon red big deleteIcon'></i>
+        </div>
+      </div>
+    {{/if}}
+
     <div class='eleven wide column'>
         <p class='answerAnswer'>{{answer.answer}}</p>
         <p class='answerAuthor'>{{answer.author}}</p>

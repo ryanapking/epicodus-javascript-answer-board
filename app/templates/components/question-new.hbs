@@ -13,14 +13,14 @@
       {{input value=author}}
     </div>
     {{#if formError}}
-    <div class="ui red message">
-      <div class="header">
-        Error: Empty Field
+      <div class="ui red message">
+        <div class="header">
+          Error: Empty Field
+        </div>
+        <ul class="list">
+          <li>Please make sure you included your name, question, and notes and try to submit the form again</li>
+        </ul>
       </div>
-      <ul class="list">
-        <li>Please make sure you included your name, question, and notes and try to submit the form again</li>
-      </ul>
-    </div>
     {{/if}}
     <button {{action 'newQuestion'}} class='ui labeled icon button blue'>
       <i class='comment outline icon'></i>

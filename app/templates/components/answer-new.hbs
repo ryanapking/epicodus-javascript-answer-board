@@ -12,14 +12,14 @@
         </div>
       </div>
       {{#if formError}}
-      <div class="ui red message">
-        <div class="header">
-          Error: Empty Field
+        <div class="ui red message leftAlign">
+          <div class="header">
+            Error: Empty Field
+          </div>
+          <ul class="list">
+            <li>Please include an answer and try to submit the form again</li>
+          </ul>
         </div>
-        <ul class="list">
-          <li>Please include an answer and try to submit the form again</li>
-        </ul>
-      </div>
       {{/if}}
       <button {{action 'newAnswer' question}} class='ui labeled icon button green'>
         <i class='comment icon'></i>

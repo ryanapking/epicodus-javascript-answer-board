@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   editShowing: false,
+  deleteRequested: false,
   actions: {
     editQuestion(question) {
       var params = {
@@ -16,9 +17,13 @@ export default Ember.Component.extend({
       this.set('editShowing', true);
     },
     deleteQuestion(question) {
-      if (confirm("Are you sure you'd like to delete this question? Doing so will also delete all responses to the question.")) {
-        this.sendAction('deleteQuestion', question);
-      }
+      this.sendAction('deleteQuestion', question);
+    },
+    requestDelete() {
+      this.set('deleteRequested', true);
+    },
+    cancelDelete() {
+      this.set('deleteRequested', false);
     }
   }
 });

@@ -1,11 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  deleteRequested: false,
   actions: {
     deleteAnswer(answer) {
-      if (confirm('Are you sure you want to delete this answer?')) {
-        this.sendAction('deleteAnswer', answer);
-      }
+      this.set('deleteRequested', false);
+      this.sendAction('deleteAnswer', answer);
+    },
+    requestDelete() {
+      this.set('deleteRequested', true);
+    },
+    cancelDelete() {
+      this.set('deleteRequested', false);
     }
   }
 });
