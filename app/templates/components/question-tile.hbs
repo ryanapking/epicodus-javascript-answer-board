@@ -1,3 +1,22 @@
 {{#link-to 'question' question}}
-  <h4>{{question.question}}</h4>
+  <div class='ui segment questionSegment'>
+    <div class='comment'>
+      <div class='avatar'>
+        <i class='comment outline icon big'></i>
+      </div>
+      <div class='content'>
+        <div class='author'>
+          {{question.author}}
+          <span class='metadata'>
+            {{question.answers.length}}
+            <i class='comment icon'></i>
+          </span>
+        </div>
+        <div class='text'>
+          {{question.question}}
+        </div>
+      </div>
+    </div>
+  </div>
 {{/link-to}}
+<br>

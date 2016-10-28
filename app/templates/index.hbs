@@ -1,5 +1,7 @@
 {{question-new newQuestion='newQuestion' class='ui aligned right'}}
 <h2>Questions:</h2>
-{{#each model as |question|}}
-  {{question-tile question=question}}
-{{/each}}
+<div class='ui comments'>
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
+</div>

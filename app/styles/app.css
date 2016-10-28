@@ -2,3 +2,7 @@
   background-color: lightgray;
   height: 100%;
 }
+
+.metadata {
+  float: right;
+}
