@@ -6,3 +6,11 @@
 .metadata {
   float: right;
 }
+
+.answers {
+  padding-left: 15%;
+}
+
+.questionDetails {
+  padding-right: 15%;
+}

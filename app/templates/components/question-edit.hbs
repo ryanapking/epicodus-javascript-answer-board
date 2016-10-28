@@ -5,7 +5,7 @@
   {{input value=newNotes placeholder=question.notes}}
   <label>Author</label>
   {{input value=newAuthor placeholder=question.author}}
-  <button {{action 'editQuestion' question}}>Save Changes</button>
+  <button {{action 'editQuestion' question}} class='ui button'>Save Changes</button>
 {{else}}
-  <button {{action 'showEdit'}}>Edit Question</button>
+  <button {{action 'showEdit'}} class='ui button'>Edit Question</button>
 {{/if}}

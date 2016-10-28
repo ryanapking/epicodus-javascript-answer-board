@@ -3,7 +3,7 @@
   {{input value=answer}}
   <label>Author</label>
   {{input value=author}}
-  <button {{action 'newAnswer' question}}>Submit Answer</button>
+  <button {{action 'newAnswer' question}} class='ui button'>Submit Answer</button>
 {{else}}
-  <button {{action 'showAnswerForm'}}>Answer Question</button>
+  <button {{action 'showAnswerForm'}} class='ui button'>Answer Question</button>
 {{/if}}

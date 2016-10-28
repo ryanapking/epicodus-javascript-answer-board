@@ -1,3 +1,19 @@
-<h4>{{question.question}}</h4>
-<p>{{question.notes}}</p>
-<p>Question by: {{question.author}}</p>
+<div class='ui segment'>
+  <div class='comment'>
+    <div class='avatar'>
+      <i class='comment outline icon big'></i>
+    </div>
+    <div class='content'>
+      <div class='author'>
+        {{question.author}}
+      </div>
+      <div class='text'>
+        {{question.question}}
+      </div>
+      <div class='text'>
+        {{question.notes}}
+      </div>
+    </div>
+  </div>
+</div>
+<br>
