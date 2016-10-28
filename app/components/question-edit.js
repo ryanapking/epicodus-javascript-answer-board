@@ -21,6 +21,10 @@ export default Ember.Component.extend({
     },
     requestDelete() {
       this.set('deleteRequested', true);
+      var currentComponent = this;
+      setTimeout(function() {
+        currentComponent.send('cancelDelete');
+      }, 5000);
     },
     cancelDelete() {
       this.set('deleteRequested', false);

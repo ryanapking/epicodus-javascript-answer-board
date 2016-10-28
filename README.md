@@ -67,7 +67,7 @@ Contact me via email with any issues
 
 ## Technologies Used
 
-Ember, Node, Bower
+Ember, Node, Bower, Semantic UI
 
 ### License
 
