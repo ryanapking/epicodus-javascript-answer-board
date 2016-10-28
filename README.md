@@ -1,9 +1,14 @@
-# Answer-board
+# Answer Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### _Forum where users can post questions and answer other users' questions_
 
-## Prerequisites
+#### By _**Ryan Apking**_
+
+## Description
+
+Users can post questions, which all users can see and interact with, including answering or editing the question.
+
+## Requirements
 
 You will need the following things properly installed on your computer.
 
@@ -15,31 +20,32 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+* Establish an internet connection
+* Clone the repository to your local machine using the command `git clone`
+* From the project's main directory, run `npm install` and 'bower install' to install the needed packages to your local machine
+* From the project's main directory, run `ember s`
+* In a web browser, navigate to 'localhost:4200'
 
 ## Running / Development
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Code Generators
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+## Running Tests
 
 * `ember test`
 * `ember test --server`
 
-### Building
+## Building
 
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## Deploying
 
 Specify what it takes to deploy your app.
 
@@ -48,6 +54,23 @@ Specify what it takes to deploy your app.
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://ember-cli.com/)
 * Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+* [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
 
+## Known Bugs
+
+None
+
+## Support and contact details
+
+Contact me via email with any issues
+
+## Technologies Used
+
+Ember, Node, Bower
+
+### License
+
+*This program is licensed under the MIT license.*
+
+Copyright (c) 2016 **Ryan Apking**
