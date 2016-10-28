@@ -1,0 +1,7 @@
+<label>Question</label>
+{{input value=newQuestion placeholder=question.question}}
+<label>Notes</label>
+{{input value=newNotes placeholder=question.notes}}
+<label>Author</label>
+{{input value=newAuthor placeholder=question.author}}
+<button {{action 'editQuestion' question}}>Save Changes</button>
