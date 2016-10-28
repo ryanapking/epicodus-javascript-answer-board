@@ -1,4 +1,4 @@
-.header {
+.appHeader {
   background-color: lightgray;
   height: 100%;
 }
@@ -9,8 +9,17 @@
 
 .answers {
   padding-left: 15%;
+  text-align: right;
 }
 
 .questionDetails {
   padding-right: 15%;
+}
+
+.comment {
+  padding-bottom: 25px;
+}
+
+.field {
+  text-align: left;
 }

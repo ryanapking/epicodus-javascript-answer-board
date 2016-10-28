@@ -1,9 +1,13 @@
-{{question-edit question=model editQuestion='editQuestion'}}
-{{answer-new question=model newAnswer='newAnswer'}}
 <div class='ui questionDetails'>
-  {{question-details question=model}}
+  <div class='ui segment'>
+    {{question-details question=model}}
+    {{question-edit question=model editQuestion='editQuestion'}}
+  </div>
+  <br>
 </div>
 <div class='ui answers'>
+  {{answer-new question=model newAnswer='newAnswer'}}
+  <br>
   {{#each model.answers as |answer|}}
     {{answer-tile answer=answer}}
   {{/each}}

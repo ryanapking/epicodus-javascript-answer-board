@@ -1,9 +1,19 @@
 {{#if answerFormShowing}}
-  <label>Answer</label>
-  {{input value=answer}}
-  <label>Author</label>
-  {{input value=author}}
-  <button {{action 'newAnswer' question}} class='ui button'>Submit Answer</button>
+  <div class='ui segment'>
+    <div class='ui form'>
+      <div class='fields'>
+        <div class='eight wide field'>
+          <label>Author</label>
+          {{input value=author}}
+        </div>
+        <div class='eight wide field'>
+          <label>Answer</label>
+          {{textarea value=answer}}
+        </div>
+      </div>
+      <button {{action 'newAnswer' question}} class='ui button'>Submit Answer</button>
+    </div>
+  </div>
 {{else}}
   <button {{action 'showAnswerForm'}} class='ui button'>Answer Question</button>
 {{/if}}

@@ -1,11 +1,22 @@
-{{#if editShowing}}
-  <label>Question</label>
-  {{input value=newQuestion placeholder=question.question}}
-  <label>Notes</label>
-  {{input value=newNotes placeholder=question.notes}}
-  <label>Author</label>
-  {{input value=newAuthor placeholder=question.author}}
-  <button {{action 'editQuestion' question}} class='ui button'>Save Changes</button>
-{{else}}
-  <button {{action 'showEdit'}} class='ui button'>Edit Question</button>
-{{/if}}
+<div class='ui right aligned'>
+  {{#if editShowing}}
+    <h4 class='ui dividing header'>Update Question</h4>
+    <form class='ui form'>
+      <div class='field'>
+      <label>Question</label>
+        {{input value=newQuestion placeholder=question.question}}
+      </div>
+      <div class='field'>
+      <label>Notes</label>
+        {{input value=newNotes placeholder=question.notes}}
+      </div>
+      <div class='field'>
+      <label>Author</label>
+        {{input value=newAuthor placeholder=question.author}}
+      </div>
+      <button {{action 'editQuestion' question}} class='ui button'>Save Changes</button>
+    </form>
+  {{else}}
+    <button {{action 'showEdit'}} class='ui button'>Edit Question</button>
+  {{/if}}
+</div>
