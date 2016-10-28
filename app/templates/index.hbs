@@ -1,1 +1,4 @@
 {{question-new newQuestion='newQuestion'}}
+{{#each model as |question|}}
+  {{question-tile question=question}}
+{{/each}}

@@ -1,7 +1,11 @@
-<label>Question</label>
-{{input value=question}}
-<label>Notes</label>
-{{input value=notes}}
-<label>Author</label>
-{{input value=author}}
-<button {{action 'newQuestion'}}>Submit Question</button>
+{{#if formShowing}}
+  <label>Question</label>
+  {{input value=question}}
+  <label>Notes</label>
+  {{input value=notes}}
+  <label>Author</label>
+  {{input value=author}}
+  <button {{action 'newQuestion'}}>Submit Question</button>
+{{else}}
+  <button {{action 'showForm'}}>Add New Question</button>
+{{/if}}
