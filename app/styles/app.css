@@ -23,3 +23,39 @@
 .field {
   text-align: left;
 }
+
+.questionQuestion {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.questionAuthor {
+  color: lightgray;
+  margin-bottom: 10px;
+}
+
+.questionSegment {
+  min-height: 150px;
+}
+
+.questionNotes {
+  margin-bottom: 10px
+}
+
+.giantQuestionIcon {
+  height: 100%;
+  float: left;
+}
+
+.answerSegment {
+  margin-bottom: 10px;
+}
+
+.answerAnswer {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.answerAuthor {
+  color: lightgray;
+}
