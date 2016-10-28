@@ -3,7 +3,7 @@
     <div class='ui form'>
       <div class='fields'>
         <div class='eight wide field'>
-          <label>Author</label>
+          <label>Your Name</label>
           {{input value=author}}
         </div>
         <div class='eight wide field'>
@@ -11,10 +11,16 @@
           {{textarea value=answer rows='3'}}
         </div>
       </div>
-      <button {{action 'resetAnswerForm'}} class='ui button'>Cancel</button>
-      <button {{action 'newAnswer' question}} class='ui button'>Submit Answer</button>
+      <button {{action 'newAnswer' question}} class='ui labeled icon button green'>
+        <i class='comment icon'></i>
+        Submit Answer
+      </button>
+      <button {{action 'resetAnswerForm'}} class='ui button red'>Cancel</button>
     </div>
   </div>
 {{else}}
-  <button {{action 'showAnswerForm'}} class='ui button'>Answer Question</button>
+  <button {{action 'showAnswerForm'}} class='ui labeled icon button green'>
+    <i class='comment icon'></i>
+    Answer Question
+  </button>
 {{/if}}

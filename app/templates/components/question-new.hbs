@@ -12,9 +12,15 @@
       <label>Your Name</label>
       {{input value=author}}
     </div>
-    <button {{action 'newQuestion'}} class='ui button'>Submit Question</button>
-    <button {{action 'resetQuestionForm'}} class='ui button'>Cancel</button>
+    <button {{action 'newQuestion'}} class='ui labeled icon button blue'>
+      <i class='comment outline icon'></i>
+      Submit Question
+    </button>
+    <button {{action 'resetQuestionForm'}} class='ui button red'>Cancel</button>
   </form>
 {{else}}
-  <button {{action 'showForm'}} class='ui button'>Ask Your Own Question</button>
+  <button {{action 'showForm'}} class='ui labeled icon button blue'>
+    <i class='comment outline icon'></i>
+    Ask Your Own Question
+  </button>
 {{/if}}

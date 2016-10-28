@@ -17,11 +17,20 @@
         <label>Author</label>
           {{input value=newAuthor placeholder=question.author}}
         </div>
-        <button {{action 'editQuestion' question}} class='ui button'>Save Changes</button>
-        <button {{action 'deleteQuestion' question}} class='ui button'>Delete Question</button>
+        <button {{action 'editQuestion' question}} class='ui labeled icon button blue'>
+          <i class='comment outline icon'></i>
+          Save Changes
+        </button>
+        <button {{action 'deleteQuestion' question}} class='ui labeled icon button red'>
+          <i class='trash icon'></i>
+          Delete Question
+        </button>
       </form>
     {{else}}
-      <button {{action 'showEdit'}} class='ui button'>Edit Question</button>
+      <button {{action 'showEdit'}} class='ui labeled icon button blue'>
+        <i class='comment outline icon'></i>
+        Edit Question
+      </button>
     {{/if}}
   </div>
 </div>

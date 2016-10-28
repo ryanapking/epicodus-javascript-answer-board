@@ -1,5 +1,6 @@
 .appHeader {
-  background-color: lightgray;
+  background-color: #DFF0FF;
+  border-bottom: 2px solid black ;
   height: 100%;
 }
 
@@ -61,4 +62,9 @@
 
 .deleteIcon:hover {
   cursor: pointer;
+}
+
+.headerText {
+  padding-top: 10px;
+  font-size: 3em;
 }

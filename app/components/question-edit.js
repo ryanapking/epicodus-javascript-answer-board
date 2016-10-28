@@ -16,7 +16,9 @@ export default Ember.Component.extend({
       this.set('editShowing', true);
     },
     deleteQuestion(question) {
-      this.sendAction('deleteQuestion', question);
+      if (confirm("Are you sure you'd like to delete this question? Doing so will also delete all responses to the question.")) {
+        this.sendAction('deleteQuestion', question);
+      }
     }
   }
 });
