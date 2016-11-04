@@ -37,9 +37,18 @@
     </div>
     <div class='four wide column answerSidebar'>
       <i class='comment icon massive green'></i>
-      <div class='rate'>
-        <i {{action 'upvote' answer}} class='thumbs up icon big green'>{{answer.upvotes}}</i>
-        <i {{action 'downvote' answer}} class='thumbs down icon big red'>{{answer.downvotes}}</i>
+      <br><br>
+      <div class='voteDisplay ui grid'>
+        <div class='eight wide column upvotes'>
+          <i {{action 'upvote' answer}} class='thumbs up icon big green'></i>
+          <br><br>
+          <span class='upvoteCount'>+{{answer.upvotes}}</span>
+        </div>
+        <div class='eight wide column downvotes'>
+          <i {{action 'downvote' answer}} class='thumbs down icon big red'></i>
+          <br><br>
+          <span class='downvoteCount'>-{{answer.downvotes}}</span>
+        </div>
       </div>
       <br>
     </div>

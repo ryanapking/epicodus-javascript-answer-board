@@ -6,7 +6,7 @@
 
 ## Description
 
-Users can post questions, which all users can see and interact with, including answering or editing the question.
+Users can post questions, which all users can see and interact with, including answering or editing the question. Answers can be upvoted and downvoted which changes their display priority.
 
 ## Requirements
 
