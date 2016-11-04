@@ -11,13 +11,10 @@ export default Ember.Component.extend({
   }),
   actions: {
     favoriteQuestion(question) {
-      console.log(question);
       var favorites = this.get('favorites');
       if (favorites.questions.includes(question)) {
-        console.log('includes');
         favorites.removeQuestion(question);
       } else {
-        console.log('does not include');
         favorites.addQuestion(question);
       }
     }

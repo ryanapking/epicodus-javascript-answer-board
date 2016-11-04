@@ -14,10 +14,8 @@ export default Ember.Component.extend({
 
     favoriteAnswer(answer) {
       if (this.get('favorites').answers.includes(answer)) {
-        console.log('includes');
         this.get('favorites').removeAnswer(answer);
       } else {
-        console.log('does not include');
         this.get('favorites').addAnswer(answer);
       }
     },
