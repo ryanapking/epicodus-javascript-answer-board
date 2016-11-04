@@ -8,9 +8,13 @@
         <div class='author'>
           {{question.author}}
           <span class='metadata'>
+            {{timestamp question.timestamp}}
+          </span>
+          <br><br>
+          <div class='metadata'>
             {{question.answers.length}}
             <i class='comment icon green'></i>
-          </span>
+          </div>
         </div>
         <div class='text'>
           {{question.question}}
