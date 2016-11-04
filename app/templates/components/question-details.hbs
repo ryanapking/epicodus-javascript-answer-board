@@ -2,7 +2,11 @@
   <div class='four wide column giantQuestionIcon'>
     <i class='comment outline icon massive blue'></i>
     <div class='favorites'>
-      <i {{action 'favoriteQuestion' question}} class='star empty icon big yellow'></i>
+      {{#if isFavorite}}
+        <i {{action 'favoriteQuestion' question}} class='star icon big yellow'></i>
+      {{else}}
+        <i {{action 'favoriteQuestion' question}} class='star empty icon big yellow'></i>
+      {{/if}}
     </div>
   </div>
   <div class='twelve wide column'>
@@ -14,6 +18,9 @@
     </div>
     <div class='questionNotes'>
       {{question.notes}}
+    </div>
+    <div class='questionTimestamp'>
+      {{timestamp question.timestamp}}
     </div>
   </div>
 </div>

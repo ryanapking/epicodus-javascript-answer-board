@@ -3,8 +3,15 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   deleteRequested: false,
   favorites: Ember.inject.service(),
+  isFavorite: Ember.computed('favorites.answers.length', function() {
+    if (this.get('favorites.answers').includes(this.get('answer'))) {
+      return true;
+    } else {
+      return false;
+    }
+  }),
   actions: {
-    
+
     favoriteAnswer(answer) {
       if (this.get('favorites').answers.includes(answer)) {
         console.log('includes');

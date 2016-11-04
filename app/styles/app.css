@@ -88,3 +88,13 @@
 .questionSidebar {
   text-align: center;
 }
+
+.questionTimestamp {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.answerTimestamp {
+  text-align: left;
+}
