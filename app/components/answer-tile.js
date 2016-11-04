@@ -3,6 +3,12 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   deleteRequested: false,
   actions: {
+    upvote(answer) {
+      this.sendAction('upvote', answer);
+    },
+    downvote(answer) {
+      this.sendAction('downvote', answer);
+    },
     deleteAnswer(answer) {
       this.set('deleteRequested', false);
       this.sendAction('deleteAnswer', answer);

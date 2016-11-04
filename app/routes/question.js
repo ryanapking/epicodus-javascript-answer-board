@@ -5,6 +5,16 @@ export default Ember.Route.extend({
     return this.store.findRecord('question', params.question_id);
   },
   actions: {
+    upvote(answer) {
+      var currentUpvotes = answer.get('upvotes');
+      answer.set('upvotes', currentUpvotes + 1);
+      answer.save();
+    },
+    downvote(answer) {
+      var currentDownvotes = answer.get('downvotes');
+      answer.set('downvotes', currentDownvotes + 1);
+      answer.save();
+    },
     editQuestion(question, params) {
       Object.keys(params).forEach(function(key) {
         if (params[key] !== undefined) {

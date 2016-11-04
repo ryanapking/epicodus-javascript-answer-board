@@ -72,3 +72,15 @@
 .leftAlign {
   text-align: left;
 }
+
+.answerSidebar {
+  text-align: center;
+}
+
+.rate {
+  padding-top: 25px;
+}
+
+.thumbs:hover {
+  cursor: pointer;
+}

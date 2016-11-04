@@ -9,6 +9,6 @@
   {{answer-new question=model newAnswer='newAnswer'}}
   <br>
   {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer deleteAnswer='deleteAnswer'}}
+    {{answer-tile answer=answer deleteAnswer='deleteAnswer' upvote='upvote' downvote='downvote'}}
   {{/each}}
 </div>
