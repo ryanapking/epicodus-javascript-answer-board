@@ -84,3 +84,7 @@
 .thumbs:hover {
   cursor: pointer;
 }
+
+.questionSidebar {
+  text-align: center;
+}

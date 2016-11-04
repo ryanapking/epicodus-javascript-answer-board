@@ -31,6 +31,9 @@
         <i {{action 'upvote' answer}} class='thumbs up icon big green'>{{answer.upvotes}}</i>
         <i {{action 'downvote' answer}} class='thumbs down icon big red'>{{answer.downvotes}}</i>
       </div>
+      <div class='favorite'>
+        <i {{action 'favoriteAnswer' answer}} class='star empty icon big yellow'></i>
+      </div>
       <br>
     </div>
   </div>
