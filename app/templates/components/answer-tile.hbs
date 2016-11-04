@@ -28,8 +28,8 @@
     <div class='four wide column answerSidebar'>
       <i class='comment icon massive green'></i>
       <div class='rate'>
-        <i {{action 'upvote' answer}} class='thumbs up icon big green'></i>
-        <i {{action 'downvote' answer}} class='thumbs down icon big red'></i>
+        <i {{action 'upvote' answer}} class='thumbs up icon big green'>{{answer.upvotes}}</i>
+        <i {{action 'downvote' answer}} class='thumbs down icon big red'>{{answer.downvotes}}</i>
       </div>
       <br>
     </div>

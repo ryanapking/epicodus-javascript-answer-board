@@ -14,6 +14,9 @@ export default Ember.Component.extend({
         var params = {
           author: this.get('author'),
           answer: this.get('answer'),
+          upvotes: 0,
+          downvotes: 0,
+          timestamp: Date.now(),
           question: question
         };
         this.send('resetAnswerForm');

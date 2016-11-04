@@ -1,14 +1,12 @@
 <div class='ui questionDetails'>
   <div class='ui segment questionSegment'>
-    {{question-details question=model}}
-    {{question-edit question=model editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
+    {{question-details question=model.question}}
+    {{question-edit question=model.question editQuestion='editQuestion' deleteQuestion='deleteQuestion'}}
   </div>
   <br>
 </div>
 <div class='ui answers'>
-  {{answer-new question=model newAnswer='newAnswer'}}
+  {{answer-new question=model.question newAnswer='newAnswer'}}
   <br>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer deleteAnswer='deleteAnswer' upvote='upvote' downvote='downvote'}}
-  {{/each}}
+  {{answers-display answers=model.answers deleteAnswer='deleteAnswer' upvote='upvote' downvote='downvote'}}
 </div>
