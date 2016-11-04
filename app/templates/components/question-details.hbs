@@ -1,13 +1,7 @@
 <div class='ui grid'>
   <div class='four wide column giantQuestionIcon'>
     <i class='comment outline icon massive blue'></i>
-    <div class='favorites'>
-      {{#if isFavorite}}
-        <i {{action 'favoriteQuestion' question}} class='star icon big yellow'></i>
-      {{else}}
-        <i {{action 'favoriteQuestion' question}} class='star empty icon big yellow'></i>
-      {{/if}}
-    </div>
+    <br><br>
   </div>
   <div class='twelve wide column'>
     <p class='questionQuestion'>
@@ -21,6 +15,13 @@
     </div>
     <div class='questionTimestamp'>
       {{timestamp question.timestamp}}
+      <div class='favorites'>
+        {{#if isFavorite}}
+        <i {{action 'favoriteQuestion' question}} class='star icon big yellow'></i>
+        {{else}}
+        <i {{action 'favoriteQuestion' question}} class='star empty icon big yellow'></i>
+        {{/if}}
+      </div>
     </div>
   </div>
 </div>

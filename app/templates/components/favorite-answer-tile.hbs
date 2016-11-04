@@ -1,0 +1,29 @@
+{{#link-to 'question' answer.question.id}}
+  <div class='ui segment'>
+    <div class='comment'>
+      <div class='avatar'>
+        <i class='comment icon big green'></i>
+      </div>
+      <div class='content'>
+        <div class='author'>
+          {{answer.author}}
+          <span class='metadata'>
+            {{timestamp answer.timestamp}}
+          </span>
+          <br><br>
+        </div>
+        <div class='text'>
+          {{answer.answer}}
+          <br><br>
+          <div class='author'>
+            In Response To:
+          </div>
+          <p>
+            {{answer.question.question}}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{{/link-to}}
+<br>

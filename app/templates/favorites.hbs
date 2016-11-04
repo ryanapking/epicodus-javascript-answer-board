@@ -1,0 +1,18 @@
+<div class='ui grid'>
+  <div class='eight wide column'>
+    <div class='ui comments'>
+      <h1>Favorite Questions:</h1>
+      {{#each model.questions as |question|}}
+      {{favorite-question-tile question=question}}
+      {{/each}}
+    </div>
+  </div>
+  <div class='eight wide column'>
+    <div class='ui comments'>
+      <h1>Favorite Answers:</h1>
+      {{#each model.answers as |answer|}}
+      {{favorite-answer-tile answer=answer}}
+      {{/each}}
+    </div>
+  </div>
+</div>

@@ -24,6 +24,13 @@
     <div class='eleven wide column'>
         <p class='answerTimestamp'>
           {{timestamp answer.timestamp}}
+          <div class='favorites'>
+            {{#if isFavorite}}
+            <i {{action 'favoriteAnswer' answer}} class='star icon big yellow'></i>
+            {{else}}
+            <i {{action 'favoriteAnswer' answer}} class='star empty icon big yellow'></i>
+            {{/if}}
+          </div>
         </p>
         <p class='answerAnswer'>{{answer.answer}}</p>
         <p class='answerAuthor'>{{answer.author}}</p>
@@ -33,13 +40,6 @@
       <div class='rate'>
         <i {{action 'upvote' answer}} class='thumbs up icon big green'>{{answer.upvotes}}</i>
         <i {{action 'downvote' answer}} class='thumbs down icon big red'>{{answer.downvotes}}</i>
-      </div>
-      <div class='favorite'>
-        {{#if isFavorite}}
-          <i {{action 'favoriteAnswer' answer}} class='star icon big yellow'></i>
-        {{else}}
-          <i {{action 'favoriteAnswer' answer}} class='star empty icon big yellow'></i>
-        {{/if}}
       </div>
       <br>
     </div>

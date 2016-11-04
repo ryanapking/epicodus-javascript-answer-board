@@ -44,7 +44,8 @@
 }
 
 .giantQuestionIcon {
-  float: left;
+  text-align: center;
+  min-height: 150px;
 }
 
 .answerSegment {
@@ -97,4 +98,12 @@
 
 .answerTimestamp {
   text-align: left;
+}
+
+.favorites {
+  text-align: right;
+}
+
+.star:hover {
+  cursor: pointer;
 }
