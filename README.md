@@ -8,6 +8,8 @@
 
 Users can post questions, which all users can see and interact with, including answering or editing the question. Answers can be upvoted and downvoted which changes their display priority.
 
+Project can be viewed on [GitHub Pages](https://ryanapking.github.io/epicodus-javascript-answer-board/).
+
 ## Requirements
 
 You will need the following things properly installed on your computer.
